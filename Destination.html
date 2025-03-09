@@ -33,10 +33,10 @@
 
         .direction-box {
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            width: 200px;
+            width: 190px;
             cursor: pointer;
             transition: transform 0.3s ease, background-color 0.3s ease;
         }
@@ -84,15 +84,7 @@
             background-color: #177a94;
         }
 
-        .logo {
-            position: fixed;
-            top: 10px;  /* المسافة من أعلى الصفحة */
-            right: 10px; /* المسافة من اليمين */
-            width: 100px;  /* عرض الشعار */
-            height: 100px; /* ارتفاع الشعار */
-            z-index: 1000; /* التأكد من أن الشعار يكون فوق العناصر الأخرى */
-        }
-
+        
         /* استعلامات الوسائط للأجهزة المحمولة */
         @media (max-width: 1062px) and (max-height: 2100px) {
             .header {
@@ -138,7 +130,7 @@
     </style>
 </head>
 <body>
-    <img src="logo grad.jpg" class="logo" alt="Logo">
+   
 
     <div class="direction-container">
       <div class="direction-box" onclick="goToPage('north')">
@@ -173,7 +165,7 @@
             window.location.href = page;
         }
 
-        alert("Welcome to Noura Path");
+       
     </script>
 </body>
 </html>
