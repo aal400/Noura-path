@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>Al Aziziyah - Driver Info</title>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Naseem - Driver Info</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -103,8 +104,7 @@
             cursor: pointer;
         }
 
-      
-    /* Chat Section */
+       /* Chat Section */
 .chat-container {
     position: fixed;
     bottom: 20px;
@@ -172,7 +172,7 @@
     padding: 10px;
     cursor: pointer;
 }
-
+      
         /* Passenger Number Notice */
         .bus-info {
             margin-bottom: 15px;
@@ -238,11 +238,9 @@
         }
 
     </style>
-   
 </head>
 <body>
- 
-
+    
     <div class="container">
         <h2 class="title">Al Aziziyah - Driver Information</h2>
 
@@ -254,7 +252,7 @@
             <p><span>Period Time:</span> 1:00pm-8:00am</p>
             <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
         </div>
-
+        
         <div class="info-box">
             <p><span>Driver Name:</span> Layla</p>
             <p><span>Phone:</span> <a href="tel:0500000004">0500000004</a></p>
@@ -263,7 +261,7 @@
             <p><span>Period Time:</span> 3:00pm-9:00am</p>
             <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
         </div>
-
+        
         <div class="info-box">
             <p><span>Driver Name:</span> Rami</p>
             <p><span>Phone:</span> <a href="tel:0500000005">0500000005</a></p>
@@ -273,12 +271,11 @@
             <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
         </div>
 
-      
-
     </div>
 
-    <a href="south.html" class="back-btn">Back</a>
- <div class="chat-container" id="chat-container">
+    <a href="east.html" class="back-btn">Back</a>
+
+   <div class="chat-container" id="chat-container">
  <!-- Passenger Number Notice -->
         <div class="bus-info">
             <h2>Current passenger N:<span id="passenger-count">0</span> / 25</h2>
@@ -301,11 +298,13 @@
     
         </div>
     </div>
+      
+    
 
     <script>
         function openChat() {
             var chatContainer = document.getElementById("chat-container");
-            
+            // Toggle the display of chat container
             if (chatContainer.style.display === "flex") {
                 chatContainer.style.display = "none";
             } else {
@@ -313,7 +312,7 @@
             }
         }
 
-         let passengerCount = 0; // Initial count
+        let passengerCount = 0; // Initial count
 
         // Function to send a message
         function sendMessage() {
@@ -354,3 +353,4 @@
     </script>
 </body>
 </html>
+

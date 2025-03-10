@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Malqa - Driver Info</title>
+    <title>Al Naseem - Driver Info</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -104,8 +104,7 @@
             cursor: pointer;
         }
 
-      
-         /* Chat Section */
+       /* Chat Section */
 .chat-container {
     position: fixed;
     bottom: 20px;
@@ -173,7 +172,7 @@
     padding: 10px;
     cursor: pointer;
 }
-
+      
         /* Passenger Number Notice */
         .bus-info {
             margin-bottom: 15px;
@@ -237,52 +236,49 @@
                 padding: 7px;
             }
         }
-    </style>
 
+    </style>
 </head>
 <body>
     
-
     <div class="container">
         <h2 class="title">Al Malqa - Driver Information</h2>
 
-        <!-- Driver 1 -->
-        <div class="info-box">
-            <p><span>Driver Name:</span> Kareem</p>
-            <p><span>Phone:</span> <a href="tel:0500000001">0500000001</a></p>
-            <p><span>Nationality:</span> Saudi Arabia</p>
-            <p><span>Bus Number:</span> 12</p>
-            <p><span>Period Time:</span> 1:00pm-8:00am</p>
-            <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
-        </div>
+       <!-- Driver 1 -->
+<div class="info-box">
+    <p><span>Driver Name:</span> Kareem</p>
+    <p><span>Phone:</span> <a href="tel:0500000001">0500000001</a></p>
+    <p><span>Nationality:</span> Saudi Arabia</p>
+    <p><span>Bus Number:</span> 12</p>
+    <p><span>Period Time:</span> 1:00pm-8:00am</p>
+    <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
+</div>
 
-        <!-- Driver 2 -->
-        <div class="info-box">
-            <p><span>Driver Name:</span> Ali</p>
-            <p><span>Phone:</span> <a href="tel:0500000002">0500000002</a></p>
-            <p><span>Nationality:</span> UAE</p>
-            <p><span>Bus Number:</span> 13</p>
-            <p><span>Period Time:</span> 3:00pm-8:00am</p>
-            <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
-        </div>
+<!-- Driver 2 -->
+<div class="info-box">
+    <p><span>Driver Name:</span> Ali</p>
+    <p><span>Phone:</span> <a href="tel:0500000002">0500000002</a></p>
+    <p><span>Nationality:</span> UAE</p>
+    <p><span>Bus Number:</span> 13</p>
+    <p><span>Period Time:</span> 3:00pm-8:00am</p>
+    <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
+</div>
 
-        <!-- Driver 3 -->
-        <div class="info-box">
-            <p><span>Driver Name:</span> Ahmed</p>
-            <p><span>Phone:</span> <a href="tel:0500000003">0500000003</a></p>
-            <p><span>Nationality:</span> Qatar</p>
-            <p><span>Bus Number:</span> 14</p>
-            <p><span>Period Time:</span> 5:00pm-9:00am</p>
-            <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
-        </div>
-
-       
+<!-- Driver 3 -->
+<div class="info-box">
+    <p><span>Driver Name:</span> Ahmed</p>
+    <p><span>Phone:</span> <a href="tel:0500000003">0500000003</a></p>
+    <p><span>Nationality:</span> Qatar</p>
+    <p><span>Bus Number:</span> 14</p>
+    <p><span>Period Time:</span> 5:00pm-9:00am</p>
+    <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
+</div>
+        
     </div>
 
-    <a href="North.html" class="back-btn">Back</a>
+    <a href="east.html" class="back-btn">Back</a>
 
-   
-    <div class="chat-container" id="chat-container">
+   <div class="chat-container" id="chat-container">
  <!-- Passenger Number Notice -->
         <div class="bus-info">
             <h2>Current passenger N:<span id="passenger-count">0</span> / 25</h2>
@@ -305,15 +301,13 @@
     
         </div>
     </div>
+      
+    
 
     <script>
-        
-        if (Notification.permission !== "granted") {
-            Notification.requestPermission();
-        }
-
         function openChat() {
             var chatContainer = document.getElementById("chat-container");
+            // Toggle the display of chat container
             if (chatContainer.style.display === "flex") {
                 chatContainer.style.display = "none";
             } else {
@@ -321,7 +315,7 @@
             }
         }
 
-       let passengerCount = 0; // Initial count
+        let passengerCount = 0; // Initial count
 
         // Function to send a message
         function sendMessage() {

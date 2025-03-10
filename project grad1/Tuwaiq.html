@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuwaiq Driver Info</title>
+    <title>Al Naseem - Driver Info</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -104,8 +103,7 @@
             cursor: pointer;
         }
 
-       
-        /* Chat Section */
+       /* Chat Section */
 .chat-container {
     position: fixed;
     bottom: 20px;
@@ -173,11 +171,7 @@
     padding: 10px;
     cursor: pointer;
 }
-
-       
-       
-        
-
+      
         /* Passenger Number Notice */
         .bus-info {
             margin-bottom: 15px;
@@ -191,7 +185,6 @@
             font-weight: bold;
         }
 
-      
         @media screen and (max-width: 1062px) {
             .container {
                 max-width: 100%;
@@ -241,53 +234,54 @@
                 font-size: 0.8rem;
                 padding: 7px;
             }
-        }   
+        }
 
     </style>
-
 </head>
 <body>
     
-
     <div class="container">
-        <h2 class="title">Tuwaiq Driver Information</h2>
+        <h2 class="title">Tuwaiq - Driver Information</h2>
 
-        <!-- Driver 1 -->
-        <div class="info-box">
-            <p><span>Driver Name:</span> Naser</p>
-            <p><span>Phone:</span> <a href="tel:0500000004">0500000004</a></p>
-            <p><span>Nationality:</span> Saudi Arabia</p>
-            <p><span>Bus Number:</span> 20</p>
-            <p><span>Period Time:</span> 1:00pm-8:00am</p>
-            
-            <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
-        </div>
+       <!-- Driver 1 -->
+ <div class="info-box">
+    <p><span>Driver Name:</span> Naser</p>
+    <p><span>Phone:</span> <a href="tel:0500000004">0500000004</a></p>
+    <p><span>Nationality:</span> Saudi Arabia</p>
+    <p><span>Bus Number:</span> 20</p>
+    <p><span>Period Time:</span> 1:00pm-8:00am</p>
+    
+    <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
+</div>
 
-        <!-- Driver 2 -->
-        <div class="info-box">
-            <p><span>Driver Name:</span> Ahmed</p>
-            <p><span>Phone:</span> <a href="tel:0500000005">0500000005</a></p>
-            <p><span>Nationality:</span> Egypt</p>
-            <p><span>Bus Number:</span> 21</p>
-            <p><span>Period Time:</span> 9:00am - 5:00pm</p>
-        
-            <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
-        </div>
+<!-- Driver 2 -->
+<div class="info-box">
+    <p><span>Driver Name:</span> Ahmed</p>
+    <p><span>Phone:</span> <a href="tel:0500000005">0500000005</a></p>
+    <p><span>Nationality:</span> Egypt</p>
+    <p><span>Bus Number:</span> 21</p>
+    <p><span>Period Time:</span> 9:00am - 5:00pm</p>
 
-        <!-- Driver 3 -->
-        <div class="info-box">
-            <p><span>Driver Name:</span> Mohammed</p>
-            <p><span>Phone:</span> <a href="tel:0500000007">0500000007</a></p>
-            <p><span>Nationality:</span> Saudi Arabia</p>
-            <p><span>Bus Number:</span> 23</p>
-            <p><span>Period Time:</span> 3:00pm - 8:00am</p>
-            <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
-        </div>
+    <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
+</div>
+
+<!-- Driver 3 -->
+<div class="info-box">
+    <p><span>Driver Name:</span> Mohammed</p>
+    <p><span>Phone:</span> <a href="tel:0500000007">0500000007</a></p>
+    <p><span>Nationality:</span> Saudi Arabia</p>
+    <p><span>Bus Number:</span> 23</p>
+    <p><span>Period Time:</span> 3:00pm - 8:00am</p>
+    <img src="Chat.png" alt="Chat" class="chat-icon" onclick="openChat()">
+</div>
+     
+
+
     </div>
 
-    <a href="west.html" class="back-btn">Back</a>
+    <a href="east.html" class="back-btn">Back</a>
 
-    <div class="chat-container" id="chat-container">
+   <div class="chat-container" id="chat-container">
  <!-- Passenger Number Notice -->
         <div class="bus-info">
             <h2>Current passenger N:<span id="passenger-count">0</span> / 25</h2>
@@ -310,6 +304,8 @@
     
         </div>
     </div>
+      
+    
 
     <script>
         function openChat() {
