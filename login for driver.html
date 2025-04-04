@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,7 +97,7 @@
         .login img {
             width: 100px;
             height: 100px;
-            position: relative;
+            position:center;
             bottom: 50px;
             left: 120px;
             border-radius: 50%;  /* جعل الصورة دائرية */
@@ -140,28 +141,32 @@
 
 <body>
     
-  
     
     <div class="login">
             <img src="d1.png" alt="Profile Picture" class="profile-picture">
     
         <h1>Login</h1>
-    
-        <form onsubmit="return loginCheck(event)">
+        <form class="driver" action="Ldriver.php" method="POST">
+            
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required placeholder="Enter Name">
-
+        
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" required placeholder="Enter Password">
-
-            <input type="submit" value="Login" onmousedown="buttonPressed(event)" onmouseup="buttonReleased(event)">
+        
+           <!-- زر إعادة التوجيه عبر الرابط -->
+<a href="driver.html">
+           <input type="submit" value="Login" id="loginBtn">
+</a>
         </form>
+        
 
         <div class="signup">
             You don't have an account? <br>
             <a href="signup.html">signup</a>
         </div>
     </div>
+
 
     <script>
         function buttonPressed() {
