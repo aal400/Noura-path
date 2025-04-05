@@ -1,4 +1,5 @@
 <?php
+
 require_once 'db_connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -50,4 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Error: " . $e->getMessage();
     }
 }
+// بعد معالجة البيانات بنجاح
+header("Location: Home.html");
+exit();
 ?>
